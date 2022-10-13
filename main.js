@@ -1,3 +1,8 @@
+document.querySelector("#searchButton").addEventListener("click", function () {
+    run();
+  });
+
+
 function createUrl(location) {
   return (
     "https://api.openweathermap.org/data/2.5/weather?units=imperial&&APPID=5dc4595ee9ea25070e41e0aab0ea0c82&q=" +
@@ -45,7 +50,8 @@ function displayWeather(jsonData){
 
 
 async function run(){
-    let url = createUrl("towson");
+    let userSearchInput = document.querySelector("#searchInput").value;
+    let url = createUrl(userSearchInput);
     let jsonData = await retrieveJson(url);
     displayWeather(jsonData);
 }
