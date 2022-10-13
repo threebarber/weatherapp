@@ -1,0 +1,47 @@
+.container {
+  border: dashed blue;
+  display: flex;
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.weatherContainer {
+  border: dashed pink;
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.searchDiv {
+  width: 80%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+
+}
+
+.searchIcon {
+    width:25px;
+    height:25px;
+}
+
+.searchDiv input {
+    width:80%;
+    font: larger;
+    height: 30px;
+}
+
+* {
+  /* Font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;*/
+  font-family: "Helvetica", sans-serif;
+  color: black;
+  box-sizing: border-box;
+  letter-spacing: 0em;
+}
