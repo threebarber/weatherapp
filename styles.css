@@ -46,6 +46,11 @@
 
 }
 
+.searchButton:hover{
+    transform: scale(1.1); 
+    cursor:pointer;
+}
+
 .searchIcon {
     width:25px;
     height:25px;
@@ -56,6 +61,7 @@
     font: larger;
     height: 30px;
     font-size: 22px;
+    cursor:pointer;
 }
 
 .locationTempDiv {
